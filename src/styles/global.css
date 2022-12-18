@@ -36,7 +36,9 @@ h1, h2 {
 }
 
 
-
+/* //////////// */
+/* PC,iPad用設定 */
+/* //////////// */
 
 /* ヘッダーナビゲーション */
 * {
@@ -189,7 +191,6 @@ nav {
 
 
 /* トップページ */
-
 .home-container {
   display: grid;
   max-width: 834px;
@@ -276,6 +277,7 @@ nav {
 }
 .card-text {
   color: #777;
+  font-family: sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -316,6 +318,88 @@ nav {
 }
 
 
+/* お問い合わせページ */
+.Form {
+  margin-top: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.Form-Item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Form-Item-Label {
+  width: 33%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-size: 16px;
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 36px;
+  display: inline-block;
+  text-align: center;
+  background: #545454;
+  color: #fff;
+  font-size: 12px;
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 16px;
+  font-weight: 300;
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 16px;
+  font-weight: 300;
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #545454;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 410px;
+}
 
 
 /* フッター */
@@ -330,8 +414,10 @@ nav {
 }
 
 
+/* //////////// */
 /* iPhone用設定 */
-@media screen and (max-width: 600px) {
+/* //////////// */
+@media screen and (max-width: 414px) {
 
   /* トップページ */
   .home-container {
@@ -367,5 +453,14 @@ nav {
   .about-table {
     width: 90%;
     margin: 0 auto;
+  }
+
+  /* お問い合わせページ */
+  .Form-Item-Label {
+    width: 33%;
+    max-width: 200px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    font-size: 14px;
   }
 }
