@@ -1,6 +1,8 @@
 //グローバルスタイルシートを設定
 import './src/styles/global.css';
 
+//フォント（Fontsource）の読み込み
+import "@fontsource/noto-sans-jp" 
 
 //ナビゲーションバー操作のJavaScript
 export const onRouteUpdate = ({ location }) => {

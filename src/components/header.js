@@ -21,7 +21,7 @@ const Header = () => (
         <li><a href="#">お問い合わせ</a></li>
       </ul>
 
-      <form method="post" action="#" class="search_container">
+      <form method="post" action="#" className="search_container">
             <input type="text" size="25" placeholder="Search.." />
             <input type="submit" value="検索" />
       </form>

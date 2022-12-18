@@ -66,7 +66,7 @@ const IndexPage = () => (
               */}       
           </section>
           <section className="card">
-            <StaticImage class="card-img" src="../images/jigyo3.jpg" alt="" />
+            <StaticImage className="card-img" src="../images/jigyo3.jpg" alt="" />
               <div className="card-content">
                 <h1 className="card-title">業子力学での量子コントロール</h1>
                 <p className="card-text">業子力学による量子コントロール実験を進めております。</p>
@@ -85,6 +85,6 @@ const IndexPage = () => (
 
   //↓ "react-helmet"の代替ソリューション
   // https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
-  export const Head = () => <Seo title="Home" />
+  export const Head = () => <Seo title="ヤー・スペーステック" />
   
   export default IndexPage

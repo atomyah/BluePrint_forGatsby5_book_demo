@@ -5,10 +5,11 @@
 body {
   width: 100%;
   background-color: #fff;
+  font-family: sans-serif;
 }
 
-h1, h2, p {
-  font-family: sans-serif;
+h1, h2 {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .page-container {
@@ -18,7 +19,7 @@ h1, h2, p {
   gap: 20px 0;
 }
 
-.page-title h2 {
+.page-title h1 {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -238,6 +239,17 @@ nav {
   list-style: none;
 }
 
+.page-title h2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(144, 146, 252);
+  padding: 5px;
+  letter-spacing: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 /* トップページ＆事業内容ページ共通 */
 .card-container {
   width: 100%;
@@ -282,6 +294,30 @@ nav {
 }
 
 
+/* 会社概要 */
+.about-table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-table th,
+.about-table td {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Noto Sans Japanese';
+  padding: 10px 0;
+  border: none;
+}
+
+.about-table th {
+  width: 30%;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+
+
 /* フッター */
 .footer {
   background-color: rgb(229, 230, 237);
@@ -296,6 +332,8 @@ nav {
 
 /* iPhone用設定 */
 @media screen and (max-width: 600px) {
+
+  /* トップページ */
   .home-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -323,5 +361,11 @@ nav {
   }
   .card-img {
     width: 100%;
+  }
+
+  /* 会社概要 */
+  .about-table {
+    width: 90%;
+    margin: 0 auto;
   }
 }
